@@ -31,7 +31,6 @@ class GameMachine(Tk):
 		# self.destroy()
 		oczko = Oczko()
 
-
 	def game_two(self):
 		pass
 

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7dd9613-6d1a-4738-b2da-fa11a3b1ea30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GameMachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GameMachine.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameMachine.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameMachine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Oczko.py" beforeDir="false" afterPath="$PROJECT_DIR$/Oczko.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BlackJack" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -106,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628418710140</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add basic GUI for Oczko">
+      <created>1628438420940</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1628438420940</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +128,7 @@
     <MESSAGE value="Add title and buttons" />
     <MESSAGE value="Finish basic GUI" />
     <MESSAGE value="Add Oczko.py file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Oczko.py file" />
+    <MESSAGE value="Add basic GUI for Oczko" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add basic GUI for Oczko" />
   </component>
 </project>
