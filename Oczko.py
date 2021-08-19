@@ -6,7 +6,7 @@ class Oczko(Tk):
 	def __init__(self):
 		super().__init__()
 		self.title("Oczko")
-		self.geometry("500x380")
+		self.geometry("500x420")
 		self.resizable(False, False)
 
 		self.cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 2, 3, 4]
@@ -18,7 +18,7 @@ class Oczko(Tk):
 		self.game_title.grid(row=0, column=0, columnspan=3)
 
 		self.show_current_score = Label(self, text="Obecny wynik: \n\n0", font=("Arial", 15))
-		self.show_current_score.grid(row=1, column=0)
+		self.show_current_score.grid(row=1, column=0, pady=15)
 
 		self.show_computer_score = Label(self, text="Wynik komputera: \n\n0", font=("Arial", 15))
 		self.show_computer_score.grid(row=3, column=0)

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7dd9613-6d1a-4738-b2da-fa11a3b1ea30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Shooter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameMachine.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameMachine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Oczko.py" beforeDir="false" afterPath="$PROJECT_DIR$/Oczko.py" afterDir="false" />
@@ -108,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628438420940</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add Oczko functionality">
+      <created>1628505300861</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628505300861</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +137,7 @@
     <MESSAGE value="Finish basic GUI" />
     <MESSAGE value="Add Oczko.py file" />
     <MESSAGE value="Add basic GUI for Oczko" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add basic GUI for Oczko" />
+    <MESSAGE value="Add Oczko functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Oczko functionality" />
   </component>
 </project>
