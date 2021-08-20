@@ -126,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629382901112</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add player's movement">
+      <created>1629458073692</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629458073692</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +156,7 @@
     <MESSAGE value="Add basic GUI for Oczko" />
     <MESSAGE value="Add Oczko functionality" />
     <MESSAGE value="Add file Shooter.py and basic window." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add file Shooter.py and basic window." />
+    <MESSAGE value="Add player's movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add player's movement" />
   </component>
 </project>
