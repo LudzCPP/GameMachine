@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7dd9613-6d1a-4738-b2da-fa11a3b1ea30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Shooter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameMachine.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameMachine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Oczko.py" beforeDir="false" afterPath="$PROJECT_DIR$/Oczko.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shooter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shooter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +34,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pythonProject\GameMachine\Assets" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -116,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628505300861</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add file Shooter.py and basic window.">
+      <created>1629382901112</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1629382901112</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +148,7 @@
     <MESSAGE value="Add Oczko.py file" />
     <MESSAGE value="Add basic GUI for Oczko" />
     <MESSAGE value="Add Oczko functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Oczko functionality" />
+    <MESSAGE value="Add file Shooter.py and basic window." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add file Shooter.py and basic window." />
   </component>
 </project>
