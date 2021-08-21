@@ -133,7 +133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629458073692</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add shooting mechanics">
+      <created>1629469279656</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1629469279656</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add new background image">
+      <created>1629475905327</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1629475905327</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +171,8 @@
     <MESSAGE value="Add Oczko functionality" />
     <MESSAGE value="Add file Shooter.py and basic window." />
     <MESSAGE value="Add player's movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add player's movement" />
+    <MESSAGE value="Add shooting mechanics" />
+    <MESSAGE value="Add new background image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new background image" />
   </component>
 </project>
