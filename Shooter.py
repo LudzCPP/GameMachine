@@ -1,4 +1,5 @@
 import pygame
+import sys
 
 pygame.init()
 pygame.font.init()
@@ -38,7 +39,6 @@ WINNER_FONT = pygame.font.SysFont("Arial", 70)
 
 class Shooter:
 	def __init__(self):
-		super().__init__()
 		self.window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 		pygame.display.set_caption("Shooter")
 		self.main()
@@ -60,7 +60,9 @@ class Shooter:
 			for event in pygame.event.get():
 				if event.type == pygame.QUIT:
 					run = False
-					pygame.quit()
+					pygame.display.quit()
+					# pygame.quit()
+					# sys.exit()
 
 				if event.type == pygame.KEYDOWN:
 					if event.key == pygame.K_LCTRL and len(yellow_bullets) < MAX_BULLETS:
