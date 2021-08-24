@@ -1,6 +1,7 @@
 from tkinter import *
 from Oczko import Oczko
 from Shooter import Shooter
+from Football import Football
 
 
 class GameMachine(Tk):
@@ -20,7 +21,7 @@ class GameMachine(Tk):
 		self.game_two = Button(text="Shooter", width=15, height=3, font=("Arial", 15), command=self.game_two)
 		self.game_two.grid(row=1, column=1, pady=20)
 
-		self.game_three = Button(text="Gra 3", width=15, height=3, font=("Arial", 15), command=self.game_three)
+		self.game_three = Button(text="Football", width=15, height=3, font=("Arial", 15), command=self.game_three)
 		self.game_three.grid(row=2, column=0, pady=20)
 
 		self.game_four = Button(text="Gra 4", width=15, height=3, font=("Arial", 15), command=self.game_four)
@@ -36,7 +37,7 @@ class GameMachine(Tk):
 		shooter = Shooter()
 
 	def game_three(self):
-		pass
+		football = Football()
 
 	def game_four(self):
 		pass
