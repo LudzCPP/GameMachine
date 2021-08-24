@@ -3,8 +3,9 @@ import pygame
 WINDOW_WIDTH, WINDOW_HEIGHT = 900, 500
 PLAYER_WIDTH, PLAYER_HEIGHT = 20, 100
 BALL_WIDTH, BALL_HEIGHT = 15, 15
-BALL_SPEED = 5
 PLAYER_SPEED = 5
+BALL_SPEED = 4
+BALL_ACCELERATION = 0.3
 POINTS_FONT = pygame.font.SysFont("Arial", 35)
 WINNER_FONT = pygame.font.SysFont("Arial", 50)
 LEFT_SCORE = pygame.USEREVENT + 1
@@ -31,7 +32,7 @@ class Football:
 		right_points = 0
 
 		ball = pygame.Rect(WINDOW_WIDTH / 2 - BALL_WIDTH / 2, WINDOW_HEIGHT / 2 - BALL_HEIGHT / 2, BALL_WIDTH, BALL_HEIGHT)
-
+		ball_speed = BALL_SPEED
 		ball_direction = [1, -1]
 
 		clock = pygame.time.Clock()
@@ -47,6 +48,7 @@ class Football:
 					right_points += 1
 					self.reset_positions(left_player, right_player, ball)
 					self.draw_window(left_player, right_player, ball, left_points, right_points)
+					ball_speed = BALL_SPEED
 					if right_points != SCORE_TO_WIN:
 						pygame.time.delay(1000)
 
@@ -54,6 +56,7 @@ class Football:
 					left_points += 1
 					self.reset_positions(left_player, right_player, ball)
 					self.draw_window(left_player, right_player, ball, left_points, right_points)
+					ball_speed = BALL_SPEED
 					if left_points != SCORE_TO_WIN:
 						pygame.time.delay(1000)
 
@@ -69,7 +72,7 @@ class Football:
 				break
 
 			self.player_movement_handle(left_player, right_player)
-			ball_direction = self.ball_movement_handle(ball, ball_direction, left_player, right_player)
+			ball_direction, ball_speed = self.ball_movement_handle(ball, ball_direction, left_player, right_player, ball_speed)
 			self.draw_window(left_player, right_player, ball, left_points, right_points)
 
 		self.main()
@@ -100,9 +103,9 @@ class Football:
 		if pressed_keys[pygame.K_DOWN] and right.y < WINDOW_HEIGHT - PLAYER_HEIGHT:
 			right.y += PLAYER_SPEED
 
-	def ball_movement_handle(self, ball, direction, left, right):
-		ball.x += BALL_SPEED * direction[0]
-		ball.y += BALL_SPEED * direction[1]
+	def ball_movement_handle(self, ball, direction, left, right, ball_speed):
+		ball.x += ball_speed * direction[0]
+		ball.y += ball_speed * direction[1]
 
 		# Bouncing
 		if ball.y <= 0:
@@ -111,6 +114,7 @@ class Football:
 			direction[1] *= -1
 		if ball.colliderect(left) or ball.colliderect(right):
 			direction[0] *= -1
+			ball_speed += BALL_ACCELERATION
 
 		#Points
 		if ball.x < 0:
@@ -118,7 +122,7 @@ class Football:
 		if ball.x > WINDOW_WIDTH - BALL_WIDTH:
 			pygame.event.post(pygame.event.Event(LEFT_SCORE))
 
-		return direction
+		return [direction, ball_speed]
 
 	def reset_positions(self, left, right, ball):
 		ball.x = WINDOW_WIDTH / 2 - BALL_WIDTH / 2
