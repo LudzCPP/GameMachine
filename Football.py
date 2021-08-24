@@ -5,6 +5,11 @@ PLAYER_WIDTH, PLAYER_HEIGHT = 20, 100
 BALL_WIDTH, BALL_HEIGHT = 15, 15
 BALL_SPEED = 5
 PLAYER_SPEED = 5
+POINTS_FONT = pygame.font.SysFont("Arial", 35)
+WINNER_FONT = pygame.font.SysFont("Arial", 50)
+LEFT_SCORE = pygame.USEREVENT + 1
+RIGHT_SCORE = pygame.USEREVENT + 2
+SCORE_TO_WIN = 2
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -21,6 +26,10 @@ class Football:
 	def main(self):
 		left_player = pygame.Rect(50, WINDOW_HEIGHT / 2 - PLAYER_HEIGHT / 2, PLAYER_WIDTH, PLAYER_HEIGHT)
 		right_player = pygame.Rect(WINDOW_WIDTH - 50 - PLAYER_WIDTH, WINDOW_HEIGHT / 2 - PLAYER_HEIGHT / 2, PLAYER_WIDTH, PLAYER_HEIGHT)
+
+		left_points = 0
+		right_points = 0
+
 		ball = pygame.Rect(WINDOW_WIDTH / 2 - BALL_WIDTH / 2, WINDOW_HEIGHT / 2 - BALL_HEIGHT / 2, BALL_WIDTH, BALL_HEIGHT)
 
 		ball_direction = [1, -1]
@@ -34,13 +43,45 @@ class Football:
 				if event.type == pygame.QUIT:
 					run = False
 					pygame.display.quit()
+				if event.type == RIGHT_SCORE:
+					right_points += 1
+					self.reset_positions(left_player, right_player, ball)
+					self.draw_window(left_player, right_player, ball, left_points, right_points)
+					if right_points != SCORE_TO_WIN:
+						pygame.time.delay(1000)
+
+				if event.type == LEFT_SCORE:
+					left_points += 1
+					self.reset_positions(left_player, right_player, ball)
+					self.draw_window(left_player, right_player, ball, left_points, right_points)
+					if left_points != SCORE_TO_WIN:
+						pygame.time.delay(1000)
+
+			winner_text = ""
+
+			if left_points == SCORE_TO_WIN:
+				winner_text = "Left player wins!"
+			if right_points == SCORE_TO_WIN:
+				winner_text = "Right player wins!"
+			if winner_text != "":
+				self.reset_positions(left_player, right_player, ball)
+				self.draw_winner(winner_text)
+				break
 
 			self.player_movement_handle(left_player, right_player)
 			ball_direction = self.ball_movement_handle(ball, ball_direction, left_player, right_player)
-			self.draw_window(left_player, right_player, ball)
+			self.draw_window(left_player, right_player, ball, left_points, right_points)
 
-	def draw_window(self, left, right, ball):
+		self.main()
+
+	def draw_window(self, left, right, ball, l_points, r_points):
 		self.window.fill(BLACK)
+
+		left_points = POINTS_FONT.render(f"Score: {l_points}", True, WHITE)
+		right_points = POINTS_FONT.render(f"Score: {r_points}", True, WHITE)
+		self.window.blit(left_points, (75, 10))
+		self.window.blit(right_points, (WINDOW_WIDTH - left_points.get_width() - 75, 10))
+
 		pygame.draw.rect(self.window, WHITE, left)
 		pygame.draw.rect(self.window, WHITE, right)
 		pygame.draw.rect(self.window, WHITE, ball)
@@ -63,6 +104,7 @@ class Football:
 		ball.x += BALL_SPEED * direction[0]
 		ball.y += BALL_SPEED * direction[1]
 
+		# Bouncing
 		if ball.y <= 0:
 			direction[1] *= -1
 		if ball.y >= WINDOW_HEIGHT - BALL_HEIGHT:
@@ -70,4 +112,23 @@ class Football:
 		if ball.colliderect(left) or ball.colliderect(right):
 			direction[0] *= -1
 
+		#Points
+		if ball.x < 0:
+			pygame.event.post(pygame.event.Event(RIGHT_SCORE))
+		if ball.x > WINDOW_WIDTH - BALL_WIDTH:
+			pygame.event.post(pygame.event.Event(LEFT_SCORE))
+
 		return direction
+
+	def reset_positions(self, left, right, ball):
+		ball.x = WINDOW_WIDTH / 2 - BALL_WIDTH / 2
+		ball.y = WINDOW_HEIGHT / 2 - BALL_HEIGHT / 2
+		left.x, left.y = 50, WINDOW_HEIGHT / 2 - PLAYER_HEIGHT / 2
+		right.x, right.y = WINDOW_WIDTH - 50 - PLAYER_WIDTH, WINDOW_HEIGHT / 2 - PLAYER_HEIGHT / 2
+
+	def draw_winner(self, win_text):
+		# self.reset_positions()
+		winner_text = WINNER_FONT.render(win_text, True, WHITE)
+		self.window.blit(winner_text, (WINDOW_WIDTH / 2 - winner_text.get_width() / 2, WINDOW_HEIGHT / 2 - winner_text.get_height() / 2 - 50))
+		pygame.display.update()
+		pygame.time.delay(5000)

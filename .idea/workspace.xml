@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7dd9613-6d1a-4738-b2da-fa11a3b1ea30" name="Default Changelist" comment="" />
+    <list default="true" id="e7dd9613-6d1a-4738-b2da-fa11a3b1ea30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Football.py" beforeDir="false" afterPath="$PROJECT_DIR$/Football.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -180,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629795554183</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add ball movement">
+      <created>1629795796997</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629795796997</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +220,7 @@
     <MESSAGE value="Finish all the mechanics of the game" />
     <MESSAGE value="Add file Football.py" />
     <MESSAGE value="Add movement mechanics for players" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add movement mechanics for players" />
+    <MESSAGE value="Add ball movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ball movement" />
   </component>
 </project>
