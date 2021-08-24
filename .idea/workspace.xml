@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7dd9613-6d1a-4738-b2da-fa11a3b1ea30" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Football.py" beforeDir="false" afterPath="$PROJECT_DIR$/Football.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameMachine.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameMachine.py" afterDir="false" />
-    </list>
+    <list default="true" id="e7dd9613-6d1a-4738-b2da-fa11a3b1ea30" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629793553600</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add movement mechanics for players">
+      <created>1629794428321</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1629794428321</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add movement mechanics for players">
+      <created>1629795554183</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1629795554183</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,6 +208,7 @@
     <MESSAGE value="Add new background image" />
     <MESSAGE value="Finish all the mechanics of the game" />
     <MESSAGE value="Add file Football.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add file Football.py" />
+    <MESSAGE value="Add movement mechanics for players" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add movement mechanics for players" />
   </component>
 </project>
