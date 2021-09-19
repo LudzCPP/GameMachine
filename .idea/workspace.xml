@@ -219,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631876146623</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add drawing both players' shapes on click">
+      <created>1632043973820</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1632043973820</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +259,7 @@
     <MESSAGE value="Add score system" />
     <MESSAGE value="Add acceleration to the ball" />
     <MESSAGE value="Add TicTacToe.py and setup pygame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add TicTacToe.py and setup pygame" />
+    <MESSAGE value="Add drawing both players' shapes on click" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add drawing both players' shapes on click" />
   </component>
 </project>
